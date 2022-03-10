@@ -1,0 +1,518 @@
+{
+	"info": {
+		"_postman_id": "4a7f1294-cdaf-4768-b618-983e3c2dfd1b",
+		"name": "BInar Challenge Platinum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get usersGame",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/userGames",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames"
+							]
+						},
+						"description": "Mendapatkan Seluruh Data User"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail User Game",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/userGames/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "61e3a27a414b46aa5a6be7be"
+								}
+							]
+						},
+						"description": "Mendapatkan Data User Game Berdasarkan Id"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Register User Games",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "sifa",
+									"type": "text"
+								},
+								{
+									"key": "userId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "sifa@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "Hard",
+									"type": "text"
+								},
+								{
+									"key": "lvl",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "totalScore",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "Seler",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Karawang",
+									"type": "text"
+								},
+								{
+									"key": "socialMediaUrl",
+									"value": "instagram.com/sifa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/userGames/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames",
+								"add"
+							]
+						},
+						"description": "Mengirmkan Data User Games"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete USer Games",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/userGames/delete/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "61e8d14d8371a86055aa21f4"
+								}
+							]
+						},
+						"description": "Menghapus Data User Games"
+					},
+					"response": []
+				},
+				{
+					"name": "update User Game",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "dede",
+									"type": "text"
+								},
+								{
+									"key": "userId",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "dedenurrahman@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "experience",
+									"value": "Expert",
+									"type": "text"
+								},
+								{
+									"key": "lvl",
+									"value": "Hard",
+									"type": "text"
+								},
+								{
+									"key": "totalScore",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "NoGain NoPain ",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Karawang",
+									"type": "text"
+								},
+								{
+									"key": "socialMediaUrl",
+									"value": "instagram.com/DedeNr",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "tokenmilikdede",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/userGames/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "61dfe99a4d85df08b5a3ccbc"
+								}
+							]
+						},
+						"description": "Mengubah data user Games"
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "sifa@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/userGames/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames",
+								"login"
+							]
+						},
+						"description": "Auth Login User"
+					},
+					"response": []
+				},
+				{
+					"name": "Profile Users Games",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5MzIxYTUxZDU3OWVkNDk5ZTExZDMiLCJ1c2VyTmFtZSI6InNpZmEiLCJlbWFpbCI6InNpZmFAZ21haWwuY29tIiwiZXhwZXJpZW5jZSI6IkhhcmQiLCJsdmwiOiI4IiwidG90YWxTY29yZSI6MTAsImJpbyI6IlNlbGVyIiwiY2l0eSI6IkthcmF3YW5nIiwic29jaWFsTWVkaWFVcmwiOiJpbnN0YWdyYW0uY29tL3NpZmEiLCJyb2xlIjoidXNlciIsInVzZXJJZCI6MTEsImlkIjoiNjFlOTMyMWE1MWQ1NzllZDQ5OWUxMWQzIiwiaWF0IjoxNjQyNjg3NjM2fQ.gpZWB8JM-V8ownWv4yqaBEsu_Jd6_2mUmrRVwptZepY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/userGames/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames",
+								"me"
+							]
+						},
+						"description": "Profile User yang telah Login"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWU5MzIxYTUxZDU3OWVkNDk5ZTExZDMiLCJ1c2VyTmFtZSI6InNpZmEiLCJlbWFpbCI6InNpZmFAZ21haWwuY29tIiwiZXhwZXJpZW5jZSI6IkhhcmQiLCJsdmwiOiI4IiwidG90YWxTY29yZSI6MTAsImJpbyI6IlNlbGVyIiwiY2l0eSI6IkthcmF3YW5nIiwic29jaWFsTWVkaWFVcmwiOiJpbnN0YWdyYW0uY29tL3NpZmEiLCJyb2xlIjoidXNlciIsInVzZXJJZCI6MTEsImlkIjoiNjFlOTMyMWE1MWQ1NzllZDQ5OWUxMWQzIiwiaWF0IjoxNjQyNjg3MzIzfQ.mYITozyAvGI--ksUxs5TTgKjHRnmfiEZCERtUi2P9-M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/userGames/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"userGames",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Game",
+			"item": [
+				{
+					"name": "Get Games",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"games"
+							]
+						},
+						"description": "Mendapatkan Semua Data Game"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail Games",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/games/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"games",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "61dd924fc68c8371ba0498d8"
+								}
+							]
+						},
+						"description": "Mendapatkan Detail Game By Id"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Game",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "hompimpa",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Permainan ini membutuhkan minimal 2 orang pemain",
+									"type": "text"
+								},
+								{
+									"key": "thumbnailUrl",
+									"value": "xyzxasa",
+									"type": "text"
+								},
+								{
+									"key": "gameUrl",
+									"value": "xvbhags1729817298",
+									"type": "text"
+								},
+								{
+									"key": "palyCount",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/games/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"games",
+								"add"
+							]
+						},
+						"description": "Menambahkan Data Game"
+					},
+					"response": []
+				},
+				{
+					"name": "Game Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/games/delete/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"games",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "61dd924fc68c8371ba0498d8"
+								}
+							]
+						},
+						"description": "Menghapus Data Game"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Game",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/games/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"games",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						},
+						"description": "Mengubah data Game"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

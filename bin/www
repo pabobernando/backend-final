@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+const app = require('../app');
+const mongoose = require('../src/commons/configs/mongoose.service');
+
+
+const port = process.env.PORT || 3001
+
+app.listen(port, () => {
+  console.log(`Server running on Port ${port}`);
+  mongoose.connectWithRetry();
+});

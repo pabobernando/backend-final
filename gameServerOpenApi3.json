@@ -1,0 +1,539 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "BInar Challenge Platinum",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/userGames": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Get usersGame",
+        "description": "Mendapatkan Seluruh Data User",
+        "operationId": "GetusersGame",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/userGames/{id}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Get Detail User Game",
+        "description": "Mendapatkan Data User Game Berdasarkan Id",
+        "operationId": "GetDetailUserGame",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "61e3a27a414b46aa5a6be7be"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/userGames/add": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Post Register User Games",
+        "description": "Mengirmkan Data User Games",
+        "operationId": "PostRegisterUserGames",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "userName",
+                  "email",
+                  "password",
+                  "experience",
+                  "lvl",
+                  "totalScore",
+                  "bio",
+                  "city",
+                  "socialMediaUrl"
+                ],
+                "type": "object",
+                "properties": {
+                  "userName": {
+                    "type": "string",
+                    "example": "sifa"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "sifa@gmail.com"
+                  },
+                  "password": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 12345678
+                  },
+                  "experience": {
+                    "type": "string",
+                    "example": "Hard"
+                  },
+                  "lvl": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 8
+                  },
+                  "totalScore": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 10
+                  },
+                  "bio": {
+                    "type": "string",
+                    "example": "Seler"
+                  },
+                  "city": {
+                    "type": "string",
+                    "example": "Karawang"
+                  },
+                  "socialMediaUrl": {
+                    "type": "string",
+                    "example": "instagram.com/sifa"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/userGames/delete/{id}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Delete USer Games",
+        "description": "Menghapus Data User Games",
+        "operationId": "DeleteUSerGames",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "61e8d14d8371a86055aa21f4"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/userGames/update/{id}": {
+      "patch": {
+        "tags": [
+          "User"
+        ],
+        "summary": "update User Game",
+        "description": "Mengubah data user Games",
+        "operationId": "updateUserGame",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "61dfe99a4d85df08b5a3ccbc"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "userName",
+                  "email",
+                  "experience",
+                  "lvl",
+                  "totalScore",
+                  "bio",
+                  "city",
+                  "socialMediaUrl",
+                  "token"
+                ],
+                "type": "object",
+                "properties": {
+                  "userName": {
+                    "type": "string",
+                    "example": "dede"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "dedenurrahman@gmail.com"
+                  },
+                  "experience": {
+                    "type": "string",
+                    "example": "Expert"
+                  },
+                  "lvl": {
+                    "type": "string",
+                    "example": "Hard"
+                  },
+                  "totalScore": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 10
+                  },
+                  "bio": {
+                    "type": "string",
+                    "example": "NoGain NoPain "
+                  },
+                  "city": {
+                    "type": "string",
+                    "example": "Karawang"
+                  },
+                  "socialMediaUrl": {
+                    "type": "string",
+                    "example": "instagram.com/DedeNr"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "tokenmilikdede"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/userGames/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Login User",
+        "description": "Auth Login User",
+        "operationId": "LoginUser",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "email",
+                  "password"
+                ],
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "sifa@gmail.com"
+                  },
+                  "password": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 12345678
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/userGames/me": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Profile Users Games",
+        "description": "Profile User yang telah Login",
+        "operationId": "ProfileUsersGames",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false,
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/userGames/logout": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Logout User",
+        "operationId": "LogoutUser",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false,
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/games": {
+      "get": {
+        "tags": [
+          "Game"
+        ],
+        "summary": "Get Games",
+        "description": "Mendapatkan Semua Data Game",
+        "operationId": "GetGames",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/games/{id}": {
+      "get": {
+        "tags": [
+          "Game"
+        ],
+        "summary": "Get Detail Games",
+        "description": "Mendapatkan Detail Game By Id",
+        "operationId": "GetDetailGames",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "61dd924fc68c8371ba0498d8"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/games/add": {
+      "post": {
+        "tags": [
+          "Game"
+        ],
+        "summary": "Post Game",
+        "description": "Menambahkan Data Game",
+        "operationId": "PostGame",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "name",
+                  "description",
+                  "thumbnailUrl",
+                  "gameUrl",
+                  "palyCount"
+                ],
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "hompimpa"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "Permainan ini membutuhkan minimal 2 orang pemain"
+                  },
+                  "thumbnailUrl": {
+                    "type": "string",
+                    "example": "xyzxasa"
+                  },
+                  "gameUrl": {
+                    "type": "string",
+                    "example": "xvbhags1729817298"
+                  },
+                  "palyCount": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 6
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/games/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Game"
+        ],
+        "summary": "Game Delete",
+        "description": "Menghapus Data Game",
+        "operationId": "GameDelete",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "61dd924fc68c8371ba0498d8"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/games/update/{id}": {
+      "patch": {
+        "tags": [
+          "Game"
+        ],
+        "summary": "Update Game",
+        "description": "Mengubah data Game",
+        "operationId": "UpdateGame",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "null"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [],
+  "tags": [
+    {
+      "name": "User"
+    },
+    {
+      "name": "Game"
+    }
+  ]
+}
