@@ -14,12 +14,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/userGames",
+							"raw": "http://localhost:3000/userGames",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames"
 							]
@@ -34,12 +34,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/userGames/:id",
+							"raw": "http://localhost:3000/userGames/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames",
 								":id"
@@ -117,12 +117,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3001/userGames/add",
+							"raw": "http://localhost:3000/userGames/add",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames",
 								"add"
@@ -138,12 +138,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/userGames/delete/:id",
+							"raw": "http://localhost:3000/userGames/delete/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames",
 								"delete",
@@ -234,12 +234,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3001/userGames/update/:id",
+							"raw": "http://localhost:3000/userGames/update/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames",
 								"update",
@@ -277,12 +277,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3001/userGames/login",
+							"raw": "http://localhost:3000/userGames/login",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames",
 								"login"
@@ -308,12 +308,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/userGames/me",
+							"raw": "http://localhost:3000/userGames/me",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames",
 								"me"
@@ -339,12 +339,12 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/userGames/logout",
+							"raw": "http://localhost:3000/userGames/logout",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"userGames",
 								"logout"
@@ -364,12 +364,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/games",
+							"raw": "http://localhost:3000/games",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"games"
 							]
@@ -384,12 +384,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/games/:id",
+							"raw": "http://localhost:3000/games/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"games",
 								":id"
@@ -441,12 +441,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3001/games/add",
+							"raw": "http://localhost:3000/games/add",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"games",
 								"add"
@@ -462,12 +462,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/games/delete/:id",
+							"raw": "http://localhost:3000/games/delete/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"games",
 								"delete",
@@ -490,12 +490,12 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/games/update/:id",
+							"raw": "http://localhost:3000/games/update/:id",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3001",
+							"port": "3000",
 							"path": [
 								"games",
 								"update",
